@@ -1,0 +1,61 @@
+//STUDENTS?//
+
+CREATE TABLE Students(
+   id INT(8),
+   Name VARCHAR(20),
+   email VARCHAR(20),
+   Course VARCHAR(20););
+
+
+INSERT INTO Students (id,Name,email,Course) VALUES (
+  '1',
+  'Virat Kohli',
+  'virat18@gmail.com',
+  'full-stack'
+),(
+  '2',
+  'Dhoni MS',
+  'dhoni07@gmail.com',
+  'Data Science'
+),(
+  '3',
+  'Rohit Sharma',
+  'rohit45@gmail.com',
+  'Front END'
+),(
+  '4',
+  'Shikhar DHawan',
+  'dhawan54@gmail.com',
+  'Full stack'
+); 
+
+//MENTORS//
+
+CREATE TABLE Mentors(
+   id INT(8),
+   Name VARCHAR(20),
+   Expertise VARCHAR(20),
+   Batches VARCHAR(20));
+
+INSERT INTO Mentors (id,Name,Expertise,Batches) VALUES (
+  '11',
+  'Rahul Dravid',
+  '[Python,JS]',
+  '1,2'
+),(
+  '12',
+  'Ravi Shastri',
+  'MERN',
+  '2,3'
+),(
+  '13',
+  'Sourav Ganguly',
+  'Frontend',
+  '4'
+);
+
+//COURSES//
+
+CREATE TABLE Courses (course_name VARCHAR,Batch integer)
+
+INSERT INTO Courses VALUES ('Full_stack','1,2'),('DataScience','3'),('Frontend','4');
